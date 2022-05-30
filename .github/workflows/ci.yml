@@ -33,9 +33,9 @@ jobs:
     - name: Run flake8
       run: flake8
     - name: Run Pylint
-      run: pylint python_ml_for_financial
+      run: pylint .
     - name: Run Mypy
-      run: mypy python_ml_for_financial
+      run: mypy .
     - name: tests
       run: |
        pip install .[tests]
